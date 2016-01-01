@@ -153,9 +153,9 @@ Bouncing ball animation example. Each ball is created as a content using differe
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-checkbox">basic-checkbox</a>
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-container-layout"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/basic-checkbox-example.jpg" height="100" alt=""/></a>
 
-<x-app-info id="basiccheckbox.example.kinoma.marvell.com"><span class="uiSample"></span></x-app-info>
+<x-app-info id="basiccheckbox.example.kinoma.marvell.com"><span class="uiSample mobileSample"></span></x-app-info>
 
-This basic example demonstrates the use of the Checkbox object from the Controls framework.  In addition to general setup one option for impleneting "Check all" is also shown.
+This basic example demonstrates how to use the Checkbox object from the Controls library.  In addition to general setup, one option for implementing "Check all" is also shown.
 
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
@@ -165,7 +165,7 @@ This basic example demonstrates the use of the Checkbox object from the Controls
 
 <x-app-info id="basiccontainerlayout.example.kinoma.marvell.com"><span class="uiSample"></span></x-app-info>
 
-This basic example demonstrates the impact different ways of declaring the size and position of a container have on the container's appearance.  The example also combines the JavaScript Array.prototype.map() function with a simple container template to allow for very concice code.
+This basic example shows how coordinates are used to specify the position and size of contents relative to their container.  The example also uses the JavaScript Array.prototype.map() function to build a container list from an array of instantiating data.
 
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
@@ -173,9 +173,9 @@ This basic example demonstrates the impact different ways of declaring the size 
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-dialog">basic-dialog</a>
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-dialog"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/basic-dialog-example.jpg" height="100" alt=""/></a>
 
-<x-app-info id="basicdialog.example.kinoma.marvell.com"><span class="uiSample"></span></x-app-info>
+<x-app-info id="basicdialog.example.kinoma.marvell.com"><span class="uiSample mobileSample"></span></x-app-info>
 
-This basic example shows how to display a dialog box and handle the input supplied by the user.  Due to the size of the onscreen keyboard, this example works best with the "Desktop" and "Nexus One" / "iPhone" simulators.
+This basic example shows how to display a dialog box and handle user input.  Due to the size of the on-screen keyboard, this example works best with the "Desktop" and "Nexus One" / "iPhone" simulators.
 
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
@@ -185,7 +185,7 @@ This basic example shows how to display a dialog box and handle the input suppli
 
 <x-app-info id="basiceventdrivenui.example.kinoma.marvell.com"><span class="uiSample"></span></x-app-info>
 
-This basic example shows how use events to easily trigger updates in multiple places throughout an interface. 
+This basic example shows how to distribute events across the container hierarchy to simultaneously update multiple UI elements.
 
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
@@ -196,7 +196,7 @@ This basic example shows how use events to easily trigger updates in multiple pl
 
 <x-app-info id="basicscroller.example.kinoma.marvell.com"><span class="uiSample"></span></x-app-info>
 
-This basic example demonstrates how to dynamically build a scrolling list from a simple array of items.  The elements in the list feature an embedded button (in blue) which triggers a different action than clicking on the rest of the element.
+This basic example demonstrates how to dynamically build a scrolling list from a simple array of items. Tapping a list item triggers an action. Each list item also includes an embedded button (in blue) that triggers a different action when tapped.
 
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
@@ -206,7 +206,7 @@ This basic example demonstrates how to dynamically build a scrolling list from a
 
 <x-app-info id="basicwebservicerequest.example.kinoma.marvell.com"><span class="networkSample"></span></x-app-info>
 
-This basic example makes a request to a simple web service to generate the md5 hash of a string. The example demonstrates making requets using JSON, processing JSON resposnces and basic error handling.
+This basic example makes a request to a simple web service to generate the MD5 hash of a string. The example demonstrates making requests using JSON, processing JSON responses and basic error handling.
 
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
@@ -394,7 +394,7 @@ Uses a digital pin to turn on and off an LED when a button is pressed on screen.
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/digital-reflex-test">digital-reflex-test</a>
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/digital-reflex-test"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/digital-reflex-test-example.jpg" height="100" alt=""/></a>
 					
-<x-app-info id="digital-reflex-test.example.kinoma.marvell.com"><span class="createSample pinsSample uiSample"></span></x-app-info>
+<x-app-info id="digitalreflextest.example.kinoma.marvell.com"><span class="createSample pinsSample uiSample"></span></x-app-info>
 
 This app demonstrates how to use a digital pin to read input from a physical button and use sub-pixel rendering to get smooth animation. It is a simple reflex testing game to play on a Kinoma Create. Three sheep will attempt to run across the screen, and the player's goal is to tap the button before they make it all the way across.
 
@@ -441,12 +441,12 @@ This MobileFramework example demonstrates how to use the global KPR Files object
 <div style="clear:both; margin-bottom: 16px;"></div>
 ***
 
-### <a href="https://github.com/Kinoma/KPR-examples/tree/master/files-chunks">files-chunks</a>
-<a href="https://github.com/Kinoma/KPR-examples/tree/master/files-chunks"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/files-chunks-example.jpg" height="100" alt=""/></a>
+### <a href="https://github.com/Kinoma/KPR-examples/tree/master/files-buffers">files-buffers</a>
+<a href="https://github.com/Kinoma/KPR-examples/tree/master/files-buffers"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/files-buffers-example.jpg" height="100" alt=""/></a>
 
-<x-app-info id="fileschunks.example.kinoma.marvell.com"><span class="filesSample"></span></x-app-info>
+<x-app-info id="filesbuffers.example.kinoma.marvell.com"><span class="filesSample"></span></x-app-info>
 
-This application demonstrates how to use the global KPR Files object. KPR Files provides APIs for reading and writing text, binary, JSON and XML files, and manipulating/iterating directories. In addition, KPR Chunk is introduced. Chunk is an object that wraps a memory block.
+This application demonstrates how to use the global KPR Files object. KPR Files provides APIs for reading and writing text, binary, JSON and XML files, and manipulating/iterating directories.
 
 <div style="clear:both; margin-bottom: 16px;"></div>
 ***
@@ -1066,7 +1066,7 @@ This example demonstrates how to issue an HTTP request to the OpenWeatherMap ser
 
 <x-app-info id="zeroconf.example.kinoma.marvell.com" platform="mac,iphone,android,linux"><span class="networkSample uiSample"></span></x-app-info>
 
-A simple application that shows Zeroconf usage. The application starts a HTTP server on port 1234, registers it with the name service named "KPR Server". It also looks for available HTTP servers on the local network. Note: Zeroconf is not yet supported on Windows.
+A simple application that shows Zeroconf usage. The application starts a HTTP server on port 1234, registers it with the name service named "KPR Server". It also looks for available HTTP servers on the local network. To run this application in the simulators on Windows, first install Apple iTunes.
 
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
