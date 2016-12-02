@@ -25,12 +25,14 @@ exports.configure = function() {
 }
 
 exports.read = function() {
-    var samples = this.audio.read();
-    var count = samples.length / 2;
+    var buffer = this.audio.read();
+	var samples = new Int16Array(buffer)
+    var count = samples.length;
     var total = 0, peak = 0, rms = 0.1;
-    var data = new Int16Array(samples, 0, count);
-    for (var i = 0; i < count; i++) {
-        var sample = data[i];
+    for (var i = 0; i < count; i += 1) {
+        var sample = samples[i];
+        if (sample & 0x8000)
+        	sample |= 0xFFFF0000;
         if (sample < 0)
             sample = -sample;
 
@@ -41,5 +43,5 @@ exports.read = function() {
             peak = sample;
     }
 
-    return {samples: samples, count: count, peak: peak, average: Math.round(total / count), rms: Math.round(Math.sqrt(rms / count))};
+    return { /*samples: samples,*/ count: count, peak: peak, average: Math.round(total / count), rms: Math.round(Math.sqrt(rms / count))};
 }

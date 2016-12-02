@@ -150,6 +150,67 @@ Bouncing ball animation example. Each ball is created as a content using differe
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
 
+### <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-checkbox">basic-checkbox</a>
+<a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-container-layout"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/basic-checkbox-example.jpg" height="100" alt=""/></a>
+
+<x-app-info id="basiccheckbox.example.kinoma.marvell.com"><span class="uiSample mobileSample"></span></x-app-info>
+
+This basic example demonstrates how to use the Checkbox object from the Controls library.  In addition to general setup, one option for implementing "Check all" is also shown.
+
+<div style="clear:both; margin-bottom: 16px;"></div>			
+***
+
+### <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-container-layout">basic-container-layout</a>
+<a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-container-layout"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/basic-container-layout-example.jpg" height="100" alt=""/></a>
+
+<x-app-info id="basiccontainerlayout.example.kinoma.marvell.com"><span class="uiSample"></span></x-app-info>
+
+This basic example shows how coordinates are used to specify the position and size of contents relative to their container.  The example also uses the JavaScript Array.prototype.map() function to build a container list from an array of instantiating data.
+
+<div style="clear:both; margin-bottom: 16px;"></div>			
+***
+
+### <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-dialog">basic-dialog</a>
+<a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-dialog"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/basic-dialog-example.jpg" height="100" alt=""/></a>
+
+<x-app-info id="basicdialog.example.kinoma.marvell.com"><span class="uiSample mobileSample"></span></x-app-info>
+
+This basic example shows how to display a dialog box and handle user input.  Due to the size of the on-screen keyboard, this example works best with the "Desktop" and "Nexus One" / "iPhone" simulators.
+
+<div style="clear:both; margin-bottom: 16px;"></div>			
+***
+
+### <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-event-driven-ui">basic-event-driven-ui</a>
+<a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-event-driven-ui"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/basic-event-driven-ui-example.jpg" height="100" alt=""/></a>
+
+<x-app-info id="basiceventdrivenui.example.kinoma.marvell.com"><span class="uiSample"></span></x-app-info>
+
+This basic example shows how to distribute events across the container hierarchy to simultaneously update multiple UI elements.
+
+<div style="clear:both; margin-bottom: 16px;"></div>			
+***
+
+
+### <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-scroller">basic-scroller</a>
+<a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-scroller"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/basic-scroller-example.jpg" height="100" alt=""/></a>
+
+<x-app-info id="basicscroller.example.kinoma.marvell.com"><span class="uiSample"></span></x-app-info>
+
+This basic example demonstrates how to dynamically build a scrolling list from a simple array of items. Tapping a list item triggers an action. Each list item also includes an embedded button (in blue) that triggers a different action when tapped.
+
+<div style="clear:both; margin-bottom: 16px;"></div>			
+***
+
+### <a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-web-service-request">basic-web-service-request</a>
+<a href="https://github.com/Kinoma/KPR-examples/tree/master/basic-web-service-request"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/basic-web-service-request-example.jpg" height="100" alt=""/></a>
+
+<x-app-info id="basicwebservicerequest.example.kinoma.marvell.com"><span class="networkSample"></span></x-app-info>
+
+This basic example makes a request to a simple web service to generate the MD5 hash of a string. The example demonstrates making requests using JSON, processing JSON responses and basic error handling.
+
+<div style="clear:both; margin-bottom: 16px;"></div>			
+***
+
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/bing-images">bing-images</a>				
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/bing-images"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/bing-images-example.jpg" height="100" alt=""/></a>
 
@@ -183,7 +244,7 @@ A sample that demonstrates how to run a Kinoma Blinking Light Library (BLL) once
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/browser">browser</a>
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/browser"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/browser-example.jpg" height="100" alt=""/></a>
 
-<x-app-info id="browser.example.kinoma.marvell.com" platform="mac,win,iphone,android"><span class="uiSample mobileSample"></span></x-app-info>
+<x-app-info id="browser.example.kinoma.marvell.com" platform="mac,iphone,android"><span class="uiSample mobileSample"></span></x-app-info>
 
 This example demonstrates how to implement an embedded web view container. The code embeds the web view with a browser container. This example demonstrates how to display a web page in the browser, support browser forward/backwards navigation, implement callbacks when the web page is loading/loaded, display a busy indicator using the MobileFramework and use anchor references to containers. Note that the browser container is not available on Windows or Kinoma Create.
 
@@ -283,7 +344,7 @@ This MobileFramework application demonstrates how to use KPR DIAL to remotely la
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/dialog">dialog</a>
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/dialog"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/dialog-example.jpg" height="100" alt=""/></a>
 
-<x-app-info id="dialog.example.kinoma.marvell.com"><span class="uiSample mobileSample"></span></x-app-info>
+<x-app-info id="dialog.example.kinoma.marvell.com" platform="mac,win,iphone,android"><span class="uiSample mobileSample"></span></x-app-info>
 
 This example demonstrates how to setup and display MobileFramework dialogs. Various common controls are integrated into the dialog samples and selected values are output when the dialogs are dismissed. Dialogs are built from a list of items returned by the onDescribe() dialog behavior handler function.
 
@@ -333,7 +394,7 @@ Uses a digital pin to turn on and off an LED when a button is pressed on screen.
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/digital-reflex-test">digital-reflex-test</a>
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/digital-reflex-test"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/digital-reflex-test-example.jpg" height="100" alt=""/></a>
 					
-<x-app-info id="digital-reflex-test.example.kinoma.marvell.com"><span class="createSample pinsSample uiSample"></span></x-app-info>
+<x-app-info id="digitalreflextest.example.kinoma.marvell.com"><span class="createSample pinsSample uiSample"></span></x-app-info>
 
 This app demonstrates how to use a digital pin to read input from a physical button and use sub-pixel rendering to get smooth animation. It is a simple reflex testing game to play on a Kinoma Create. Three sheep will attempt to run across the screen, and the player's goal is to tap the button before they make it all the way across.
 
@@ -380,12 +441,12 @@ This MobileFramework example demonstrates how to use the global KPR Files object
 <div style="clear:both; margin-bottom: 16px;"></div>
 ***
 
-### <a href="https://github.com/Kinoma/KPR-examples/tree/master/files-chunks">files-chunks</a>
-<a href="https://github.com/Kinoma/KPR-examples/tree/master/files-chunks"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/files-chunks-example.jpg" height="100" alt=""/></a>
+### <a href="https://github.com/Kinoma/KPR-examples/tree/master/files-buffers">files-buffers</a>
+<a href="https://github.com/Kinoma/KPR-examples/tree/master/files-buffers"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/files-buffers-example.jpg" height="100" alt=""/></a>
 
-<x-app-info id="fileschunks.example.kinoma.marvell.com"><span class="filesSample"></span></x-app-info>
+<x-app-info id="filesbuffers.example.kinoma.marvell.com"><span class="filesSample"></span></x-app-info>
 
-This application demonstrates how to use the global KPR Files object. KPR Files provides APIs for reading and writing text, binary, JSON and XML files, and manipulating/iterating directories. In addition, KPR Chunk is introduced. Chunk is an object that wraps a memory block.
+This application demonstrates how to use the global KPR Files object. KPR Files provides APIs for reading and writing text, binary, JSON and XML files, and manipulating/iterating directories.
 
 <div style="clear:both; margin-bottom: 16px;"></div>
 ***
@@ -433,7 +494,7 @@ BLL and sample application for the Hover board touchless gesture sensor from htt
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/i2c-monster-mayhem">i2c-monster-mayhem</a>
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/i2c-monster-mayhem"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/i2c-monster-mayhem-example.jpg" height="100" alt=""/></a>
 					
-<x-app-info id="i2c-monster-mayhem"><span class="uiSample pinsSample createSample"></span></x-app-info>
+<x-app-info id="i2cmonstermayhem.example.kinoma.marvell.com"><span class="uiSample pinsSample createSample"></span></x-app-info>
 
 This project builds on top of the i2c-nfc sample by using the same Adafruit PN532 NFC/RFID Controller shield to create an interactive game that makes use of the NFC cards as a "controller". The user places a card on the reader and is able to select an avatar (or “monster”) from about 15 options. The program takes advantage of the fact that data can also be written to a NFC card and uses it as a storage medium: the user’s choice is effectively serialized onto the card as JSON data, and the card can now be brought to another Kinoma Create where the companion project i2c-monster-mayhem-gumball is running to proceed with gameplay.
 
@@ -443,7 +504,7 @@ This project builds on top of the i2c-nfc sample by using the same Adafruit PN53
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/i2c-monster-mayhem-gumball">i2c-monster-mayhem-gumball</a>
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/i2c-monster-mayhem-gumball"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/i2c-monster-mayhem-gumball-example.jpg" height="100" alt=""/></a>
 					
-<x-app-info id="i2c-monster-mayhem-gumball"><span class="uiSample pinsSample createSample"></span></x-app-info>
+<x-app-info id="i2cmonstermayhemgumball.example.kinoma.marvell.com"><span class="uiSample pinsSample createSample"></span></x-app-info>
 
 This project is the companion project to i2c-monster-mayhem, and requires a properly programmed NFC card from i2c-monster-mayhem in order to properly work. The user places the preprogrammed card onto the NFC reader and then plays a simple memory game. All the possible candidate “monsters” scroll by, and once the correct avatar is shown (the one initially chosen by the user and programmed onto the card), he/she must quickly remove the card from the reader in order to win the game and receive a gumball. The user is given three tries to do so. If all attempts have been exhausted, then the user must select another monster with a Kinoma Create running i2c-monster-mayhem and reprogram their card.
 
@@ -940,6 +1001,16 @@ This example demonstrates how to use different timer techniques: One-shot, inter
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
 
+### <a href="https://github.com/Kinoma/KPR-examples/tree/master/transition-easing-functions">transition-easing-functions</a>
+<a href="https://github.com/Kinoma/KPR-examples/tree/master/transition-easing-functions"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/transition-easing-functions-example.jpg" height="100" alt=""/></a>
+					
+<x-app-info id="transitioneasingfunctions.example.kinoma.marvell.com"><span class="uiSample"></span></x-app-info>
+
+This example demonstrates the array of easing functions available for use when designing transitions. A simple "slide-off" transition is displayed using the selected easing funciton.
+
+<div style="clear:both; margin-bottom: 16px;"></div>			
+***
+
 ### <a href="https://github.com/Kinoma/KPR-examples/tree/master/transitions">transitions</a>
 <a href="https://github.com/Kinoma/KPR-examples/tree/master/transitions"><img src="https://raw.githubusercontent.com/Kinoma/KPR-examples/master/screenshots/transitions-example.jpg" height="100" alt=""/></a>
 					
@@ -995,7 +1066,7 @@ This example demonstrates how to issue an HTTP request to the OpenWeatherMap ser
 
 <x-app-info id="zeroconf.example.kinoma.marvell.com" platform="mac,iphone,android,linux"><span class="networkSample uiSample"></span></x-app-info>
 
-A simple application that shows Zeroconf usage. The application starts a HTTP server on port 1234, registers it with the name service named "KPR Server". It also looks for available HTTP servers on the local network. Note: Zeroconf is not yet supported on Windows.
+A simple application that shows Zeroconf usage. The application starts a HTTP server on port 1234, registers it with the name service named "KPR Server". It also looks for available HTTP servers on the local network. To run this application in the simulators on Windows, first install Apple iTunes.
 
 <div style="clear:both; margin-bottom: 16px;"></div>			
 ***
