@@ -1,6 +1,6 @@
 //@module
 /*
-  Copyright 2011-2014 Marvell Semiconductor, Inc.
+  Copyright 2011-2016 Marvell Semiconductor, Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -44,3 +44,20 @@ exports.wasReleased = function() {
 exports.close = function() {
 	this.button.close();
 }
+
+exports.metadata = {
+	sources: [
+		{
+			name: "read",
+			result: { type: "Number", name: "state", defaultValue: 0, min: 0, max: 1, decimalPlaces: 0 },
+		},
+		{
+			name: "wasPressed",
+			result: { type: "Boolean", name: "result" },
+		},
+		{
+			name: "wasReleased",
+			result: { type: "Boolean", name: "result" },
+		},
+	]
+};

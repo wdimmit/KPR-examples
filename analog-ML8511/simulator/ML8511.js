@@ -15,13 +15,11 @@
   limitations under the License.
 */
 
-var THEME = require ("themes/flat/theme");
-var CONTROL = require ("mobile/control");
 var PinsSimulators = require ("PinsSimulators");
 
 exports.pins = {
-    uv: {type: "A2D", pin: 52},
-    vref: {type: "A2D", pin: 54},
+    uv: {type: "Analog", pin: 52},
+    vref: {type: "Analog", pin: 54},
 }
 
 exports.configure = function(configuration) {
@@ -64,3 +62,18 @@ exports.read = function() {
     result.index = 3;
     return result;
 }
+
+exports.metadata = {
+	sources: [
+		{
+			name: "read",
+			result: 
+				{ type: "Object", name: "result", properties:
+					[
+						{ type: "Number", name: "intensity", defaultValue: 3, min: 0, max: 15, decimalPlaces: 3 },
+						{ type: "Number", name: "index", defaultValue: 3, min: 3, max: 3, decimalPlaces: 0 },
+					]
+				},
+		},
+	]
+};

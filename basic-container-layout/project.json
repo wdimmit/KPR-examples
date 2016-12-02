@@ -1,0 +1,10 @@
+{
+    "title":"Basic UI Container Layout",
+    "id":"basiccontainerlayout.example.kinoma.marvell.com",
+    "tags":[
+        "uiSample"
+    ],
+    "Create":{
+        "main":"src/main"
+    },
+}

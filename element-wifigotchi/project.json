@@ -1,0 +1,13 @@
+{
+    "title":"Element Wifigotchi",
+    "description":"Port of Wifigotchi for Kinoma Element",
+    "id":"elementwifigotchi.kinoma.marvell.com",
+    "tags":[
+        "Adafruit",
+        "8x8 Matrix",
+        "HT16k33"
+    ],
+    "Element":{
+        "main":"main"
+    }
+}

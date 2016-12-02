@@ -1,0 +1,11 @@
+{
+    "title":"Element Photo Door",
+    "description":"Kinoma Element photo door application",
+    "id":"element-photo-door.project.kinoma.marvell.com",
+    "tags":[
+        "emptySample"
+    ],
+    "Element":{
+        "main":"main"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "title":"Photo Door Client",
+    "id":"photo.door.client.example.kinoma.marvell.com",
+    "Create":{
+        "main":"main"
+    },
+}

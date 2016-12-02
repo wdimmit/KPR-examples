@@ -15,6 +15,8 @@
   limitations under the License.
 */
 
+var Pins = require("pins");
+
 // styles
 var messageStyle = new Style({ font:"28px", color:"white", horizontal:"center", vertical:"middle" });
 
@@ -53,7 +55,7 @@ var GPSScreen = Container.template(function($) { return {
 			if (-1 == this.latitude && -1 == this.longitude)
 				container.remove(container.first);
 			if (position.latitude != this.latitude || position.longitude != this.longitude) {
-				var url = this.url.replace("[LAT]", position.latitude).replace("[LON]", position.longitude);
+				var url = this.url.replace(/\[LAT\]/g, position.latitude).replace(/\[LON\]/g, position.longitude);
 				this.map = new MapPicture(url);
 			}
 			this.latitude = position.latitude;
@@ -73,17 +75,25 @@ var GPSScreen = Container.template(function($) { return {
 }});
 		
 var model = application.behavior = Object.create(Object.prototype, {
-	onComplete: { value: function(application, message) {
-		application.add(new GPSScreen(this.data));
-	}},
 	onLaunch: { value: function(application) {
 		this.data = {latitude: -1, longitude: -1};
-        application.invoke(new MessageWithObject("pins:configure", {
-            gps: {
+		
+		Pins.configure({
+			gps: {
                 require: "MTK3339",
                 pins: {
                     serial: {tx: 31, rx: 33}
                 }
-            }}), Message.JSON);
+            },
+		}, success => this.onPinsConfigured(application, success));
     }},
+	onPinsConfigured: { value: function(application, success) {		
+		if (success) {		
+			application.add(new GPSScreen(this.data));
+			
+			Pins.share("ws", {zeroconf: true, name: "serial-7segment-display"});
+		}
+		else 
+			trace("failed to configure pins\n");
+	}},
 });

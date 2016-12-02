@@ -19,8 +19,8 @@
 // http://media.digikey.com/pdf/Application%20Notes/Rohm%20Application%20Notes/ML8511_UV.pdf
 
 exports.pins = {
-    uv: {type: "A2D", pin: 52},
-    vref: {type: "A2D", pin: 54},
+    uv: {type: "Analog", pin: 52},
+    vref: {type: "Analog", pin: 54},
 }
 
 exports.configure = function(configuration) {
@@ -48,3 +48,18 @@ function mapfloat(x, in_min, in_max, out_min, out_max)
 {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
+
+exports.metadata = {
+	sources: [
+		{
+			name: "read",
+			result: 
+				{ type: "Object", name: "result", properties:
+					[
+						{ type: "Number", name: "intensity", defaultValue: 3, min: 0, max: 15, decimalPlaces: 3 },
+						{ type: "Number", name: "index", defaultValue: 3, min: 3, max: 3, decimalPlaces: 0 },
+					]
+				},
+		},
+	]
+};

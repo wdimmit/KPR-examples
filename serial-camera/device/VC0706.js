@@ -94,7 +94,7 @@ exports.setImageSize = function( parameters ) {
 	if( parameters.w == 160 && parameters.h == 120 ){
 		size = SIZE_160x120;
 	}
-	else if( parameters.w == 320 && parameters.h == 140 ){
+	else if( parameters.w == 320 && parameters.h == 240 ){
 		size = SIZE_320x240;
 	}
 	else if( parameters.w == 640 && parameters.h == 480 ){
@@ -145,10 +145,12 @@ exports.capture = function() {
 	                                0, 0, frameptr >> 8, frameptr & 0xFF,
 	                                0, 0, 0, bytesToRead,
 	                                0, 0], 5 + bytesToRead + 5 );
+	                                
 			}
 			catch( error ){
 				return false; 
 			}
+			
 	        chunk.append( buffer.slice( 5, bytesToRead + 5 ) );
 	        buffer.free()
 	        bytesLeft -= bytesToRead;

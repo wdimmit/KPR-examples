@@ -1,0 +1,4 @@
+{   "id":"httpclient.element.kinoma.marvell.com",   "title":"Element HTTP Client",
+    "tags":[
+        "elementSample,networkSample"
+    ],   "Element":{       "main":"main"   },}
